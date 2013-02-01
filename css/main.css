@@ -79,7 +79,7 @@ body {
 
 .footer-container,
 .main aside {
-    border-top: 20px solid #8C9DB0;
+    border-top: 10px solid #8C9DB0;
 }
 
 .header-container,
@@ -91,6 +91,7 @@ body {
 .title {
     color: #313A45;
 }
+
 
 /* ==============
     MOBILE: Menu
@@ -249,7 +250,9 @@ nav a:hover {
 /* ============
     WIDE: Main
    ============ */
-
+    .main{
+    min-height: 60%;
+}
     .main article {
         float: left;
         width: 57%;
