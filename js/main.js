@@ -5,7 +5,11 @@
          var borders = 20;
          if($(window).width()<768)return; //Mobile check, The resize code isn't designed for our mobile layout.
          $(".main-container").height(($(window).height() - hHeight) - fHeight - borders);
-         console.log(hHeight+"|"+fHeight+"-"+$(window).height());
      });
      $(window).trigger("resize");
+     try{
+     $('#coin-slider').coinslider(); // Enables the image slider
+     }
+     catch(e)
+     {}
 });

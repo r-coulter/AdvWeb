@@ -163,7 +163,10 @@ nav a:hover {
     color: #3A4A5D;
 }
 
-
+.slideShow{
+    height: 300px;
+    width: 300px;
+}
 
 
 
