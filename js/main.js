@@ -4,12 +4,13 @@
          var fHeight = $(".footer-container").height();
          var borders = 20;
          if($(window).width()<768)return; //Mobile check, The resize code isn't designed for our mobile layout.
-         $(".main-container").height(($(window).height() - hHeight) - fHeight - borders);
+         $(".main-container").height(($(document).height() - hHeight) - fHeight - borders);
      });
-     $(window).trigger("resize");
+     
      try{
      $('#coin-slider').coinslider(); // Enables the image slider
      }
      catch(e)
      {}
+     $(window).trigger("resize");
 });
