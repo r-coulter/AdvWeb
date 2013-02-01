@@ -6,9 +6,8 @@
          if($(window).width()<768)return; //Mobile check, The resize code isn't designed for our mobile layout.
          $(".main-container").height(($(document).height() - hHeight) - fHeight - borders);
      });
-     
      try{
-     $('#coin-slider').coinslider(); // Enables the image slider
+     $('#coin-slider').coinslider(); // Enables the image slider. Hides the error you aren't on the main page.
      }
      catch(e)
      {}
