@@ -74,7 +74,7 @@ body {
    =================== */
 
 .header-container {
-    border-bottom: 20px solid #8C9DB0;
+    border-bottom: 10px solid #8C9DB0;
 }
 
 .footer-container,
@@ -184,9 +184,8 @@ nav a:hover {
     nav a {
         float: left;
         width: 14.5%;
-        height: 80%;
         margin: 0 5px;
-        padding: 25px 2%;
+        padding: 10px 2%;
         margin-bottom: 0;
         -moz-border-radius-topleft: 15px;
         -moz-border-radius-topright: 15px;
