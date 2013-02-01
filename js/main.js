@@ -3,7 +3,9 @@
          var hHeight = $(".header-container").height();
          var fHeight = $(".footer-container").height();
          var borders = 20;
+         if($(window).width()<768)return; //Mobile check, The resize code isn't designed for our mobile layout.
          $(".main-container").height(($(window).height() - hHeight) - fHeight - borders);
+         console.log(hHeight+"|"+fHeight+"-"+$(window).height());
      });
      $(window).trigger("resize");
 });
