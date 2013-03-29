@@ -2,6 +2,7 @@
     if (!isset($_SESSION)) {
         session_start();
     }
+    //If the session user variable is set skip the login page
     if($_SESSION['user']!=""){
         header("location:myContacts.php");
     }
@@ -51,7 +52,7 @@
                 <div class="loginForm">
                     <form method="post" action="security/checkLogin.php">
                         <table>
-                            <p class="error"><?php echo($_SESSION['error']); ?></p>
+                            <p class="error"><?php echo($_SESSION['error']); ?></p><!--Output a login error if one exists-->
                             <tr><td>Username</td><td><input type="text" name="user"></td></tr>
                             <tr><td>Password</td><td><input type="password" name="password"></td></tr>
                         </table>

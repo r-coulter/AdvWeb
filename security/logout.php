@@ -1,4 +1,5 @@
 <?php
+    //Kills the session and database connection then sends you back to login
     if (!isset($_SESSION)) {
         session_start();
     }

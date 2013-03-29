@@ -3,6 +3,7 @@
     if (!isset($_SESSION)) {
         session_start();
     }
+    //If the session user variable is blank redirect to the login screen. Otherwise grab sorted contacts from the database.
     if($_SESSION['user']==""){
         header("location:login.php");
     }else{
@@ -62,11 +63,14 @@
                         <td class="tblHead">Name</td><td class="tblHead">Phone</td><td class="tblHead">Address</td><td class="tblHead">Email</td>
                     </tr>
                 <?php
+                    //Process all returned rows
                     while ($row = mysql_fetch_assoc($result)) {
+                        //Add a table row for each result row and adds an alert dialog (I don't know why we needed the alert. No one would EVER do this on a real website...)
                         echo("<tr><td><a href='' onClick='alert(\"".$row['Name'].", ".$row['Phone'].", ".$row['Address'].", ".$row['Email']."\")'>".$row['Name']."</td><td><a href='tel:".$row['Phone']."'>".$row['Phone']."</a></td><td>".$row['Address']."</td><td>".$row['Email']."</td></tr>");
                     }
-                    ?>
+                ?>
                 </table>
+                <!--Log out button-->
                 <form method="post" action="security/logout.php">
                     <input type="submit" value="Log out">
                 </form>
