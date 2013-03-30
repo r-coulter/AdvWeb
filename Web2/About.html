@@ -1,0 +1,76 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>Ryan Coulter Mobile</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Custom Theme Roller -->
+	<link rel="stylesheet" href="themes/RyanWeb.min.css" />
+	<!-- Base jQuery Mobile CSS -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile.structure-1.3.0.min.css" />
+    <link rel="stylesheet" href="themes/flexslider.css">
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+</head>
+
+<body>
+	<div data-role="page" data-theme="a">
+	
+        <header data-role="header">
+        	<img id="logo" src="images/logo.png" alt="Ryan Coulter: Programmer">
+        </header><!-- /header -->
+    	
+        <div data-role="navbar" data-iconpos="top">
+          <ul>
+            <li><a href="index.html" data-icon="home">Home</a></li>
+            <li><a href="About.html" data-icon="info" class="ui-btn-active ui-state-persist">About Me</a></li>
+              <li><a href="Contact.html" data-icon="star">Contact Me</a></li>
+          </ul>
+        </div><!-- /navbar -->
+        <div data-role="navbar">
+          <ul>
+            <li><a href="Projects.html" >Projects</a></li>
+            <li><a href="Services.html">Services</a></li>
+              <li><a href="myContacts.php">My Contacts</a></li>
+          </ul>
+        </div><!-- /navbar -->
+
+        <section data-role="content">
+            <article>
+                <header>
+                    <h1>Who am I?</h1>
+                    <p>My name is Ryan Coulter, I'm a 3rd year student in Georgian College's Computer Programmer Analyst course. I've been interested in all aspects of computers for most of my life and started programming in elementary school.</p>
+                </header>
+                <section>
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>HTML5, CSS3 and Javascript</li>
+                        <li>.NET and PHP</li>
+                        <li>Mobile Development</li>
+                        <li>C#, Python, Java and many more</li>
+                        <li>Z/OS</li>
+                    </ul> 
+                    <p>To see my most up-to-date resume please visit my LinkedIn profile. It's always being updated to reflect my new skills.</p>
+                </section>
+            </article>
+        </section><!-- /content -->
+    
+        <footer data-role="footer" id="centerFooter">
+        	<h3>Copyright 2013</h3>
+            <a href="http://webdesign4.georgianc.on.ca/~200168042">Full Site</a>
+        </footer><!-- /footer -->
+	</div><!-- /page -->
+	
+</body>
+</html>
+
+<script src="js/jquery.flexslider-min.js"></script>
+<script>
+    // Can also be used with $(document).ready()
+    $(window).load(function() {
+      $('.flexslider').flexslider({
+        animation: "slide"
+      });
+    });
+</script>
+
